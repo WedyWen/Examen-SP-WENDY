@@ -40,7 +40,6 @@ namespace Examen_SP_WENDY
                         string nombre1 = Console.ReadLine();
                         acciones.ActualizarVideojuego(nombre1);
                         break;
-
                     case Menu.Salir:
                         Environment.Exit(1);
                         break;
@@ -61,5 +60,7 @@ namespace Examen_SP_WENDY
             Menu opc = (Menu) Convert.ToInt32(Console.ReadLine());
             return opc;
         }
+
+        //Program terminado
     }
 }

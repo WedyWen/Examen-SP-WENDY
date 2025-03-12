@@ -74,18 +74,27 @@ namespace Examen_SP_WENDY
             {
                 Console.WriteLine("Ingresa los nuevos datos");
                 Console.WriteLine("Nombre");
+                videojuego.Nombre = Console.ReadLine();
 
                 Console.WriteLine("Categoria");
+                videojuego.Categoria = Console.ReadLine();
+
                 Console.WriteLine("Anio de lanzamiento");
+                videojuego.AnioDLanzamiento = Convert.ToInt32(Console.ReadLine());
+
                 Console.WriteLine("Tu personaje favorito");
+                videojuego.PersonajeFav = Console.ReadLine();
+
                 Console.WriteLine("Personaje Principal");
+                videojuego.PersonajePrincipal = Console.ReadLine();
+
+                Console.WriteLine("Videojuego actualizado");
+            }
+            else
+            {
+                Console.WriteLine("No se encontro el videojuego");
             }
         }
-
-
-
-
-
-
+        //AAcciones terminada
     }
 }
