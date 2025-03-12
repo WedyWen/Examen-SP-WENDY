@@ -31,7 +31,7 @@ namespace Examen_SP_WENDY
 
             ListaVideojuegos.Add(new Videojuegos (a.Nombre, a.Categoria, a.AnioDLanzamiento, a.PersonajeFav, a.PersonajePrincipal));
             Console.WriteLine("Videojuego agregado correctamente");
-
+            Console.WriteLine("--------------------");
         }
 
         public void MostrarVideojuegos()
@@ -43,6 +43,7 @@ namespace Examen_SP_WENDY
                 Console.WriteLine($"Anio de lanzamiento: {p.AnioDLanzamiento}");
                 Console.WriteLine($"Personaje Favorito: {p.PersonajeFav}");
                 Console.WriteLine($"Perosnaje Principal: {p.PersonajePrincipal}");
+                Console.WriteLine("--------------------");
             }
         }
 
@@ -50,6 +51,7 @@ namespace Examen_SP_WENDY
         public int ContarVideojuegos()
         {
             return ListaVideojuegos.Count;
+            
         }
 
         public void EliminarVideojuego(string nombrevideojuego)
@@ -65,6 +67,7 @@ namespace Examen_SP_WENDY
             {
                 Console.WriteLine("No se encontro el videojuego");
             }
+            Console.WriteLine("---------");
         }
 
         public void ActualizarVideojuego(string nombrevideojuego)
@@ -72,6 +75,7 @@ namespace Examen_SP_WENDY
             var videojuego = ListaVideojuegos.FirstOrDefault(x => x.Nombre==nombrevideojuego);
             if ( videojuego != null)
             {
+               
                 Console.WriteLine("Ingresa los nuevos datos");
                 Console.WriteLine("Nombre");
                 videojuego.Nombre = Console.ReadLine();
